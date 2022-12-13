@@ -10,13 +10,13 @@ pipeline {
     stages {         
   
         // gradle build
-        stage('Bulid Gradle') {
+        stage('Bulid maven') {
           agent any
           steps {
-            echo 'Bulid Gradle'
+            echo 'Bulid maven'
             dir ('./serviceb'){
                 sh """
-                ./gradlew clean build --exclude-task test
+                ./mvnw clean package
                 """
             }
           }
