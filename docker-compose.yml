@@ -1,0 +1,15 @@
+version: "1.0"
+services:
+  servicea:
+    build: ./servicea
+    image: hojin19082/servicea:latest
+    container_name: servicea
+    ports:
+      - 8080:8080
+  
+  serviceb:
+    build: ./serviceb
+    image: hojin19082/serviceb:latest
+    container_name: serviceb
+    ports:
+      - 8081:8081
