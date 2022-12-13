@@ -13,7 +13,7 @@ public class ServicebApplication {
 
 	@RequestMapping("/")
 	public String helloa(){
-		return "hellob";
+		return "hello serviceb!!!";
 	}
 	
 	public static void main(String[] args) {

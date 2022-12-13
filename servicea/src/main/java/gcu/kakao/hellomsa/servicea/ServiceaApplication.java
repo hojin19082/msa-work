@@ -12,7 +12,7 @@ public class ServiceaApplication {
 
 	@RequestMapping("/")
 	public String helloa(){
-		return "helloa";
+		return "hello servicea!!!";
 	}
 
 	public static void main(String[] args) {
