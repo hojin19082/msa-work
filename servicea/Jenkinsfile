@@ -16,7 +16,7 @@ pipeline {
             echo 'Bulid maven'
             dir ('./servicea'){
                 sh """
-                ./mvnw clean package
+                ./mvnw clean package 
                 """
             }
           }
